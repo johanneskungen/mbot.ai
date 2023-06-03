@@ -13,7 +13,7 @@ export async function GET(req) {
       data: querystring.stringify({
         grant_type: "authorization_code",
         code: code,
-        redirect_uri: "http://localhost:3000/api/callback",
+        redirect_uri: process.env.REDIRECT_URI,
       }),
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
