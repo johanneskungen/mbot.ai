@@ -4,7 +4,7 @@ import { getSpotifyApi } from "@/utils/spotify-api";
 
 async function Nav() {
   const style =
-    "px-2 py-1 hover:bg-gray-400 rounded hover:shadow-md bg-white duration-100 cursor-pointer";
+    "px-2 py-1 text-sm hover:bg-gray-400 rounded hover:shadow-md bg-white duration-100 cursor-pointer";
   const profileData = await getSpotifyApi("https://api.spotify.com/v1/me");
   return (
     <div className="flex justify-between px-12 py-5 items-center">
